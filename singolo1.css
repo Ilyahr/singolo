@@ -135,206 +135,66 @@ body {
 }
 
 
+#footer {
+    padding-top: 62px;
+    padding-bottom: 62px;
+    background-color: #f2f2f2;
+    border-bottom: 6px solid white;
+}
 
-
-
-
-/*#slider{*/
-/*    display: block;*/
-/*    margin: auto;*/
-/*    background: #f06c64;*/
-/*    width: 1020px;*/
-/*    height: 594px;*/
-
-/*}*/
-/*#botton-slider{*/
-/*    float: none;*/
-/*    display: block;*/
-/*    margin: auto;*/
-/*    width: 1020px;*/
-/*    height: 6px;*/
-/*    background: #ea676b;*/
-/*}*/
-
-
-/*#Arrs{*/
-/*    !*float: left;*!*/
-/*    display: block;*/
-/*    !*padding-top: 288px;*!*/
-/*    !*padding-left: 40px;*!*/
-
-/*}*/
-
-/*.arr{*/
-/*    float: left;*/
-/*    transition: background-color 0.3s;*/
-/*}*/
-
-/*!*.arr a :hover{*!*/
-/*!*    background-color: #000000;*!*/
-/*!*}*!*/
-
-
-
-/*#arr1{*/
-/*    padding-top: 288px;*/
-/*    padding-left: 40px;*/
-/*}*/
-
-/*#rectangle1{*/
-/*    width: 21px;*/
-/*    height: 6px;*/
-/*    border-radius: 14px;*/
-
-/*    transform: rotate(45deg);*/
-/*    transform-origin: 0% 100%;*/
-
-/*}*/
-/*#rectangle2{*/
-/*    width: 21px;*/
-/*    height: 6px;*/
-/*    border-radius: 14px;*/
-
-/*    transform-origin: 0% 0%;*/
-/*    transform: rotate(315deg);*/
-/*}*/
-
-/*.hor-slider{*/
-/*    float: left;*/
-/*}*/
-
-/*#arr2{*/
-/*    padding-top: 288px;*/
-/*    padding-left: 73px;*/
-/*}*/
-
-/*.back-color{*/
-/*    background-color: #ca4549;*/
-/*}*/
-
-/*#rectangle3{*/
-/*    width: 21px;*/
-/*    height: 6px;*/
-/*    border-radius: 14px;*/
-/*    transform: rotate(225deg);*/
-/*    transform-origin: 0% 100%;*/
-
-/*}*/
-/*#rectangle4{*/
-/*    width: 21px;*/
-/*    height: 6px;*/
-/*    border-radius: 14px;*/
-/*    transform-origin: 0% 0%;*/
-/*    transform: rotate(135deg);*/
-/*}*/
-
-
-/*#ver-phone{*/
-/*    width: 291px;*/
-/*    padding-left: 51px;*/
-/*    padding-top: 53px;*/
-/*}*/
-
-/*#hor-phone{*/
-/*    width: 557px;*/
-/*    padding-left: 73px;*/
-/*    padding-top: 174px;*/
-/*}*/
-
-/*#footer{*/
-/*    display: block;*/
-/*    margin: auto;*/
-/*    background: #f2f2f2;*/
-/*    width: 1020px;*/
-/*    height: 495px;*/
-/*}*/
-
-/*#text{*/
-/*    width: 960px;*/
-/*    margin-left: 40px;*/
-/*}*/
-
-/*#botton-footer{*/
-/*    display: block;*/
-/*    margin: auto;*/
-/*    background: #ffffff;*/
-/*    width: 1020px;*/
-/*    height: 6px;*/
-/*}*/
-
-#titel{
-    padding-top: 59px;
-    color: #666d89;
-    font-family: 'Lato-Bold';
+#footer .wrap h2 {
+    margin-bottom: 21px;
+    letter-spacing: -0.15px;
+    font-family: Lato-Black, sans-serif;
     font-size: 30px;
+    color: #666d89;
 }
 
-#text-line{
-    width: 940px;
-    padding-top: 19px;
-    color: #7e86a4;
-    line-height: 30px;
-    font-family: 'Lato-Light';
-    font-size: 18px;
+#footer-text{
     text-align: justify;
+    font-family: Lato-Light, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    margin-bottom: 4px;
 }
 
-.small-group{
-    margin-right: 20px;
-    padding-top: 42px;
+.icon {
+    display: flex;
     float: left;
+    clear: left;
+    margin-right: 20px;
+    margin-top: 3px;
+    margin-left: 1px;
+}
+
+#footer-list {
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-services {
     width: 300px;
 }
 
-.left{
-    padding-top: 0;
-    float: left;
-    /*padding-right: 20px;*/
+.footer-services:nth-child(-n + 3) {
+    margin-bottom: 29px;
 }
 
-#some1{
-    padding-top: 4px;
-    padding-right: 20px;
-}
-
-#some2{
-    padding-top: 5px;
-    padding-right: 20px;
-}
-#some3{
-    padding-top: 4px;
-    padding-right: 20px;
-}
-
-#some4{
-    padding-top: 5px;
-    padding-right: 20px;
-}
-#some5{
-    padding-top: 5px;
-    padding-right: 20px;
-}
-
-#some6{
-    padding-top: 5px;
-    padding-right: 20px;
-}
-
-.small-text{
-
-    color: #767e9e;
-    font-family: 'Lato';
-    font-size: 12px;
-    padding-bottom: 27px;
-    width: 220px;
-    line-height: 22px;
-    text-align: justify;
-}
-
-.tittle-small{
+h3{
+    margin-bottom: 11px;
+    font-family: Lato-Black, sans-serif;
+    font-size: 18px;
     color: #666d89;
-    padding-top: 0;
-    padding-bottom: 9px;
-    font-family: 'Lato-Bold';
-    font-size: 19px;
+}
+
+.services-info{
+    font-family: Lato-Regular, sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    text-align: justify;
+    overflow: hidden;
 }
