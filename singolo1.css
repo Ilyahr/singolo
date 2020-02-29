@@ -127,7 +127,14 @@ a {
 
 .arr{
     float: left;
+    transition: background-color 0.3s;
 }
+
+/*.arr a :hover{*/
+/*    background-color: #000000;*/
+/*}*/
+
+
 
 #arr1{
     padding-top: 288px;
@@ -138,7 +145,7 @@ a {
     width: 21px;
     height: 6px;
     border-radius: 14px;
-    background: #ca4549;
+
     transform: rotate(45deg);
     transform-origin: 0% 100%;
 
@@ -147,7 +154,7 @@ a {
     width: 21px;
     height: 6px;
     border-radius: 14px;
-    background: #ca4549;
+
     transform-origin: 0% 0%;
     transform: rotate(315deg);
 }
@@ -161,11 +168,14 @@ a {
     padding-left: 73px;
 }
 
+.back-color{
+    background-color: #ca4549;
+}
+
 #rectangle3{
     width: 21px;
     height: 6px;
     border-radius: 14px;
-    background: #ca4549;
     transform: rotate(225deg);
     transform-origin: 0% 100%;
 
@@ -174,7 +184,6 @@ a {
     width: 21px;
     height: 6px;
     border-radius: 14px;
-    background: #ca4549;
     transform-origin: 0% 0%;
     transform: rotate(135deg);
 }
@@ -201,8 +210,8 @@ a {
 }
 
 #text{
-    width: 940px;
-    margin: auto;
+    width: 960px;
+    margin-left: 40px;
 }
 
 #botton-footer{
@@ -221,25 +230,53 @@ a {
 }
 
 #text-line{
+    width: 940px;
     padding-top: 19px;
     color: #7e86a4;
     line-height: 30px;
     font-family: 'Lato-Light';
     font-size: 18px;
+    text-align: justify;
 }
 
 .small-group{
-    padding-top: 47px;
+    margin-right: 20px;
+    padding-top: 42px;
     float: left;
     width: 300px;
 }
 
 .left{
+    padding-top: 0;
     float: left;
     /*padding-right: 20px;*/
 }
 
-.img{
+#some1{
+    padding-top: 4px;
+    padding-right: 20px;
+}
+
+#some2{
+    padding-top: 5px;
+    padding-right: 20px;
+}
+#some3{
+    padding-top: 4px;
+    padding-right: 20px;
+}
+
+#some4{
+    padding-top: 5px;
+    padding-right: 20px;
+}
+#some5{
+    padding-top: 5px;
+    padding-right: 20px;
+}
+
+#some6{
+    padding-top: 5px;
     padding-right: 20px;
 }
 
@@ -247,15 +284,17 @@ a {
 
     color: #767e9e;
     font-family: 'Lato';
-    font-size: 11px;
-    padding-bottom: 8px;
+    font-size: 12px;
+    padding-bottom: 27px;
     width: 220px;
     line-height: 22px;
+    text-align: justify;
 }
 
 .tittle-small{
     color: #666d89;
-    padding-bottom: 4px;
+    padding-top: 0;
+    padding-bottom: 9px;
     font-family: 'Lato-Bold';
     font-size: 19px;
 }
