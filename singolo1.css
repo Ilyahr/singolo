@@ -1,104 +1,92 @@
 *{
     margin: 0;
     padding: 0;
+    line-height: 1;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: Lato;
-    src: url('assets/Lato/Lato-Regular.ttf');
+li {
+    list-style: none;
 }
-@font-face {
-    /*src: url('assets/Lato/Lato-Black.ttf');*/
-    font-family: Lato-Bold;
-    src: url('assets/Lato/Lato-Bold.ttf');
-    /*!*font-family: Lato-Light;*!*/
-}
-@font-face {
-    font-family: Lato-Light;
-    src: url('assets/Lato/Lato-Light.ttf');
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
 }
 
 
-
-#header{
-    display: block;
-    margin: auto;
-    background: #2d303a;
-    width: 1020px;
-    height: 89px;
-
-}
-
-#logo{
-    float: left;
-    padding-top: 28px;
-    padding-bottom: 30px;
-    padding-left: 40px;
-}
-
-#singolo{
-    color: #ffffff;
-    float: left;
-    font-family: 'Lato';
-    font-size: 26px;
+#header-box{
+    padding-top: 32px;
+    padding-bottom: 32px;
     text-transform: uppercase;
-}
-#star-logo{
-    color: #d6645e;
-    float: left;
-    font-family: 'Lato';
-    text-transform: uppercase;
-    font-size: 26px;
+    color: white;
+    background-color: #2d303a;
+    border-bottom: 6px solid #323746;
 }
 
-#nav{
-    padding-left: 608px;
-    padding-top: 42px;
+.wrap {
+    max-width: 1020px;
+    margin:  auto;
+    padding: 0 40px;
+    box-sizing: border-box;
 }
 
-a {
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#header-box h1 {
+    letter-spacing: -0.5px;
+    font-size: 25px;
+}
+
+#header-box h1::after {
+    color: #f06c64;
+    content: "*";
+}
+
+
+#header-box nav ul{
+    display: flex;
+}
+
+#header-box nav li{
+    font-size: 12px;
+}
+
+#header-box nav a {
     text-decoration: none;
+    letter-spacing: -0.2px;
+    line-height: 12px;
     color: #ffffff;
 }
 
-.nav-item a{
-    float: left;
-    font-family: 'Lato';
-    text-transform: uppercase;
-    font-size: 12px;
-    transition: color 0.3s;
+#header-box nav li::after {
+    content: "·";
+    padding-right: 13.5px;
+    padding-left: 13.5px;
+    color: #494e62;
 }
 
-.nav-item a:hover,
-.nav-item a:active{
-    float: left;
-    color: #d6645e;
-    font-family: 'Lato';
-    text-transform: uppercase;
-    font-size: 12px;
+#header-box nav li:first-child a {
+    color: #f06c64;
 }
 
-.point {
-    margin-top: 7px;
-    margin-left: 14px;
-    margin-right: 13px;
-    float: left;
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    background-color: #494e62;
+#header-box nav li:last-child::after {
+    padding: 0;
+    content: "";
 }
 
-#botton-header{
-    float: none;
-    display: block;
-    margin: auto;
-    width: 1020px;
-    height: 6px;
-    background: #323746;
+#header-box nav a:hover {
+    color: #f06c64;
+    transition: color;
 }
+
+
+
 #slider{
     display: block;
     margin: auto;
