@@ -171,4 +171,7 @@ a{
     justify-content: center;
 }
 
-
+#list-photo .photo .links li:hover {
+    opacity: 0.7;
+    transition: opacity .25s ease-in;
+}
