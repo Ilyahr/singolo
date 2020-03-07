@@ -243,18 +243,21 @@ button {
     display: flex;
 }
 
-.footer .footer-bottom.footer-links li {
+.footer .footer-bottom .footer-links li {
     display: flex;
     width: 30px;
     height: 30px;
     margin-top: 1px;
     margin-left: 10px;
+    border-radius: 50%;
     align-items: center;
     justify-content: center;
 }
 
 .footer .footer-bottom .footer-links li:hover {
     background-color: #dedede;
+
     cursor: pointer;
+
     transition: background-color .25s ease-in;
 }
