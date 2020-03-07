@@ -169,6 +169,7 @@ body {
 }
 
 #footer-list {
+    /*background-transpanent: linear-gradient(white, black);*/
     display: flex;
     padding-top: 40px;
     justify-content: space-between;
@@ -185,13 +186,18 @@ body {
 
 h3{
     margin-bottom: 11px;
+
     font-family: Lato-Black, sans-serif;
     font-size: 18px;
     color: #666d89;
 }
 
+
+
+
 .services-info{
     font-family: Lato-Regular, sans-serif;
+
     font-size: 12px;
     line-height: 22px;
     color: #767e9e;
