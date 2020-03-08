@@ -25,12 +25,12 @@ a{
 }
 
 fieldset,
-input,
-textarea,
-button {
-    border: none;
-    outline: none;
-}
+ input,
+ textarea,
+ button {
+     border: none;
+     outline: none;
+ }
 
 .wrap {
     max-width: 1020px;
