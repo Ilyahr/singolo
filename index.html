@@ -7,34 +7,39 @@
     <link rel="stylesheet" href="fonts.css">
 </head>
 <body>
-<header id="header-box">
+<header id="header-box" >
     <div class="wrap">
         <div id="header">
             <h1>singolo</h1>
             <nav>
                 <ul>
-                    <li> <a href="#">home</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">portfolio</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#header" class="nav-link">home</a></li>
+                    <li><a href="#services" class="nav-link">services</a></li>
+                    <li><a href="#portfolio" class="nav-link">portfolio</a></li>
+                    <li><a href="#about-us" class="nav-link">about</a></li>
+                    <li><a href="#contact" class="nav-link">contact</a></li>
                 </ul>
             </nav>
         </div>
     </div>
 </header>
+
 <div id='slider-box'>
     <div class="wrap">
-        <div id="slider">
+        <div id="container">
+            <div id="slider">
+                <img class="iphone-vertical" src="assets/iPhones.png" alt="vertical iphone">
+            </div>
             <img id="arrow-pre" src="assets/arr.png" alt="left arrow">
-            <img id="iphone-vertical" src="assets/phone_vertical.png" alt="vertical iphone">
-            <img id="iphone-horizontal" src="assets/phone_horizontal.png" alt="horizontal iphone">
             <img id="arrow-post" src="assets/arr.png" alt="right arrow">
         </div>
+        <button class = "screen first-but"></button>
+        <button class = "screen sec-but"></button>
+        <button class = "screen third-but"></button>
     </div>
 </div>
 
-<section class="our-service-section">
+<section class="our-service-section" id="services">
     <div class="wrap">
         <h2>Our Services</h2>
         <p class="our-service-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctos, nisi erat porttitor
@@ -105,10 +110,10 @@
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
             eget lacinia odio sem nec elit.</p>
         <ul>
-            <li class="selected"><a href="#">All</a></li>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Graphic Design</a></li>
-            <li><a href="#">Artwork</a></li>
+            <li class="selected"><a href="#portfolio">All</a></li>
+            <li><a href="#portfolio">Web Design</a></li>
+            <li><a href="#portfolio">Graphic Design</a></li>
+            <li><a href="#portfolio">Artwork</a></li>
         </ul>
         <div id="img-list">
             <img src="assets/image1.png" alt="ship">
@@ -175,7 +180,7 @@
 
     </div>
 </section>
-<section class="question-block">
+<section class="question-block" id="contact">
     <div class="wrap">
         <h2>Get a Quote</h2>
         <p>Fusce dapibus, tellus ac cursus commodo,
@@ -222,5 +227,6 @@
         </div>
     </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
