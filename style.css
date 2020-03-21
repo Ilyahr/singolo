@@ -86,16 +86,19 @@ button:focus {
     color: #ffffff;
 }
 
+.nav-link-active{
+    color: #f06c64 !important;
+}
+
+
+
 #header-box nav li::after {
     content: "·";
     padding-right: 13.5px;
     padding-left: 13.5px;
     color: #494e62;
 }
-
-#header-box nav li:first-child a {
-     color: #f06c64;
- }
+\
 
 #header-box nav li:last-child::after {
     padding: 0;
@@ -105,6 +108,7 @@ button:focus {
 #header-box nav a:hover {
     color: #f06c64;
 }
+
 
 
 

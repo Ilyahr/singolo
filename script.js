@@ -1,8 +1,8 @@
 let links = document.querySelectorAll(".nav-link");
 
 function navColoring(activeNum, newNum){
-        links[activeNum].style.color = "#FFFFFF";
-        links[newNum].style.color = "#f06c64"
+        links[activeNum].classList.remove("nav-link-active");
+        links[newNum].classList.add("nav-link-active");
 }
 
 let activeNum = 1;
