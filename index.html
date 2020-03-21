@@ -110,24 +110,24 @@
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
             eget lacinia odio sem nec elit.</p>
         <ul>
-            <li class="selected"><a href="#portfolio">All</a></li>
-            <li><a href="#portfolio">Web Design</a></li>
-            <li><a href="#portfolio">Graphic Design</a></li>
-            <li><a href="#portfolio">Artwork</a></li>
+            <li><a href="#portfolio"><button class="picture-selector color-chooser">All</button></a></li>
+            <li><a href="#portfolio"><button class="picture-selector color-maker">Web Design</button></a></li>
+            <li><a href="#portfolio"><button class="picture-selector color-maker">Graphic Design</button></a></li>
+            <li><a href="#portfolio"><button class="picture-selector color-maker">Artwork</button></a></li>
         </ul>
         <div id="img-list">
-            <img src="assets/image1.png" alt="ship">
-            <img src="assets/image2.png" alt="girl">
-            <img src="assets/image3.png" alt="city">
-            <img src="assets/image4.png" alt="robot">
-            <img src="assets/image5.png" alt="some">
-            <img src="assets/image6.png" alt="ide">
-            <img src="assets/image7.png" alt="imagine">
-            <img src="assets/image8.png" alt="birds">
-            <img src="assets/image9.png" alt="frog">
-            <img src="assets/image10.png" alt="text">
-            <img src="assets/image11.png" alt="monster">
-            <img src="assets/image12.png" alt="glass">
+            <img class="imgs" src="assets/image1.png" alt="ship">
+            <img class="imgs" src="assets/image2.png" alt="girl">
+            <img class="imgs" src="assets/image3.png" alt="city">
+            <img class="imgs" src="assets/image4.png" alt="robot">
+            <img class="imgs" src="assets/image5.png" alt="some">
+            <img class="imgs" src="assets/image6.png" alt="ide">
+            <img class="imgs" src="assets/image7.png" alt="imagine">
+            <img class="imgs" src="assets/image8.png" alt="birds">
+            <img class="imgs" src="assets/image9.png" alt="frog">
+            <img class="imgs" src="assets/image10.png" alt="text">
+            <img class="imgs" src="assets/image11.png" alt="monster">
+            <img class="imgs" src="assets/image12.png" alt="glass">
         </div>
     </div>
 </section>
@@ -189,7 +189,7 @@
             Fusce dapibus, tellus ac cursus commodo,
             tortor mauris condimentum nibh.</p>
         <div class="question-elements">
-            <form class="question-form" name="quote-form" action="#" autocomplete="on" method="POST">
+            <form class="question-form" name="quote" action="#" autocomplete="on" method="POST">
                 <fieldset>
                     <label>
                         <input type="text" placeholder="Name (Required)" name="name" required>
@@ -198,7 +198,7 @@
                         <textarea placeholder="Describe your project in detail..." name="description"></textarea>
                     </label>
                 </fieldset>
-                <button type="submit">Submit</button>
+                <button id="subbut" type="submit">Submit</button>
             </form>
             <div class="qw-contact-info">
                 <h3>Contact Information</h3>
@@ -227,6 +227,16 @@
         </div>
     </div>
 </footer>
+<div class="modal-window hidden">
+    <div class="modal-window-wrapper pop-down">
+        <h3>Письмо отправлено</h3>
+        <h4 id="subReturn">Тема:</h4>
+        <p class="subject"></p>
+        <h4 id="desReturn">Описание:</h4>
+        <p class="description"></p>
+        <button id="okBut">OK</button>
+    </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>

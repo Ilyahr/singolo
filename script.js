@@ -31,7 +31,13 @@ let sliderBox = document.querySelector("#slider-box"),
     rigthArr = document.querySelector("#arrow-post"),
     imagineOne = document.querySelector(".iphone-vertical"),
     screenMain = document.querySelectorAll(".screen"),
-    screenMonitoring= [true, true, true];
+    screenMonitoring= [true, true, true],
+    pictureSelector = document.querySelectorAll(".picture-selector"),
+    imgs = document.querySelectorAll(".imgs"),
+    selectedTub = 0,
+    mas = [1,2,3,4,5,6,7,8,9,10,11,12],
+    activeElement = 0,
+    activeImg = 0;
 
 
 leftArr.addEventListener("click", function(){
@@ -51,7 +57,7 @@ function transformItem() {
             screenMonitoring[i] = false;
             screen(i);
         });
-        imagineOne.src = "assets/slider-content-2.png";
+        imagineOne.src = "assets/iPhones-2.png";
         imagineOne.classList.replace("iphone-vertical", "iphone-vertical-2");
         screenMain[0].classList.replace("first-but", "page-first-but");
         screenMain[1].classList.replace("sec-but", "page-sec-but");
@@ -92,5 +98,83 @@ function screen(i) {
         screenMain[i].style.opacity = "0";
         screenMonitoring[i] = true;
     }
+
+}
+
+pictureSelector.forEach(function (item, i) {
+    pictureSelector[i].addEventListener("click", function () {
+        if(selectedTub !== i) {
+            tagColor(i);
+            var arr = shuffle(mas);
+            console.log(arr);
+            imgs.forEach(function (element, j) {
+                imgs[j].src = "assets/image" + arr[j] + ".png"
+            });
+            selectedTub = i;
+        }
+        imgs[activeImg].classList.remove("imagine-reaction");
+    })
+});
+
+imgs.forEach(function (item, i) {
+    imgs[i].addEventListener('click', function () {
+        imgs[activeImg].classList.remove("imagine-reaction");
+        imgs[i].classList.add("imagine-reaction");
+        activeImg = i;
+    })
+});
+
+function tagColor(i) {
+    pictureSelector[i].classList.replace("color-maker", "color-chooser");
+    pictureSelector[activeElement].classList.replace( "color-chooser" ,"color-maker");
+    activeElement = i;
+}
+
+
+function shuffle(arr){
+    var j, temp;
+    for(var i = arr.length - 1; i > 0; i--){
+        j = Math.floor(Math.random()*(i + 1));
+        temp = arr[j];
+        arr[j] = arr[i];
+        arr[i] = temp;
+    }
+    return arr;
+}
+
+
+
+let form = document.querySelector(".question-form");
+form.addEventListener("submit", function (event){
+    event.preventDefault();
+    Complete();
+});
+
+
+function Complete(){
+    let subject = document.quote.subject.value,
+        description = document.quote.description.value,
+        subreturn = document.querySelector("#subReturn"),
+        desreturn = document.querySelector("#desReturn"),
+        okBut = document.querySelector("#okBut"),
+        modalWindiw = document.querySelector(".modal-window");
+    modalWindiw.classList.remove("hidden");
+
+    if(!subject.length){
+        subreturn.innerHTML = "Без темы";
+    }
+    else {
+        subreturn.innerHTML = "Тема: " + subject;
+    }
+    if(!description.length){
+        desreturn.innerHTML = "Без описания";
+    }
+    else {
+        desreturn.innerHTML = "Описание: " + description;
+    }
+
+    okBut.addEventListener("click", function() {
+        modalWindiw.classList.add("hidden");
+    });
 
 }
